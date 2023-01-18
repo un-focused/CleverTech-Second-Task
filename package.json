@@ -1,0 +1,36 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "jest-junit": "^10.0.0"
+  },
+  "name": "async-devskiller",
+  "version": "1.0.0",
+  "description": "Recruitment exercise evaluating asynchronous programming skills in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "async",
+    "promise"
+  ],
+  "author": "github.com/kasvtv",
+  "jest": {
+    "testEnvironment": "node",
+    "reporters": [
+      "default",
+      "jest-junit"
+    ]
+  },
+  "jest-junit": {
+    "outputName": "./test-results.xml",
+    "suiteName": "jest tests",
+    "suiteNameTemplate": "{filepath}",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}",
+    "ancestorSeparator": " › "
+  }
+}
