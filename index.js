@@ -15,6 +15,13 @@ function sleep(ms) {
       }
   )
 }
+/*
+1. calculate pool size
+2. open connections for each file
+3. when file download finishes or crashes close it & remove from queue
+4. start next download
+5. return
+ */
 
 const pooledDownload = async (connect, save, downloadList, maxConcurrency) => {
   // open as many connections as max concurrency or download list length
